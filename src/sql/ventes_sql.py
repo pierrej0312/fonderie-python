@@ -1,17 +1,7 @@
-import os 
-from dotenv import load_dotenv
+from sql.sql_connect import connecter_sql
 from mssql_python import connect
 
-load_dotenv()
-serveur = os.getenv("SQL_HOTE")
-if os.getenv("SQL_INSTANCE"):
-    serveur += "\\" + os.getenv("SQL_INSTANCE")
-    
-conn = connect(
-    f"Server={serveur};Database={os.getenv("SQL_BASE")};"
-    f"UID={os.getenv("SQL_LOGIN")};PWD={os.getenv("SQL_MDP")};"
-    f"Encrypt=yes;TrustServerCertificate=yes"
-)
+conn = connecter_sql()
 format = "fut"
 cursor = conn.cursor()
 cursor.execute(
