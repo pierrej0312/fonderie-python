@@ -1,0 +1,15 @@
+Le championnat des robots de la Fonderie
+
+  regles.py               les règles : les coups, leur préparation, leur portée, leur coût en énergie (à lire)
+  moteur.py               le moteur du combat (à lire si vous voulez, pas besoin de le modifier)
+  robots_entrainement.py  six robots d'entraînement au style marqué : ils montrent comment écrire une stratégie
+  mon_robot.py            VOTRE robot : la fonction strategie(etat)
+  combat.py               faire combattre votre robot
+
+Dans le terminal de VS Code, depuis ce dossier (pas besoin d'activer le venv : le combat n'utilise que Python) :
+  python combat.py              bilan contre les six robots d'entraînement, en A puis en B
+  python combat.py mur          un combat contre mur : les moments forts, et combat.json
+  python combat.py mur --journal mur.csv    le même combat, une ligne par instant (pour pandas)
+
+Pour voir le combat en 3D : jeu en ligne, page « Le championnat des robots », onglet Revoir, choisissez combat.json.
+Pour jouer vous-même au clavier, ou inscrire votre robot au championnat : même page, onglets Jouer et Envoyer.

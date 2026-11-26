@@ -1,0 +1,12 @@
+Le championnat des robots · robots 2 et 3 (jour 5)
+
+En plus du kit du robot 1 :
+  apprentissage.py         les dix-neuf nombres que voit un robot, et arbre_en_code (l'arbre écrit en if / else)
+  decisions.csv            les décisions des robots d'entraînement pendant 325 combats (une ligne par décision)
+  donnees_apprentissage.py le programme qui a fabriqué decisions.csv (à lire, pas besoin de le relancer)
+  robot2_arbre.ipynb       robot 2 : un arbre de décision apprend ce que font les gagnants
+  robot2_modele.py         le robot 2 à compléter avec les règles de l'arbre (copiez-le en robot2.py)
+  robot3_modele.py         le robot 3 à compléter avec le cerveau exporté du labo des neurones (copiez-le en robot3.py)
+
+Bonus : vos combats joués au clavier (onglet Jouer de l'arène, bouton « Télécharger mes combats ») peuvent s'ajouter aux données du robot 2.
+Tester un robot : python combat.py --robot robot2.py

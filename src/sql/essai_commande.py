@@ -1,4 +1,4 @@
-from sql_connect import connecter_sql
+from sql.sql_connect import connecter_sql
 from mssql_python import connect
 
 conn = connecter_sql()
